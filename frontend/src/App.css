@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ece5dd;
+}
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login-screen input {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.chat-app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #075e54;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 0.75em;
+  color: #999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5ddd5;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message-bubble {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 16px;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble.sent {
+  background-color: #333;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+  border-radius: 16px 0 16px 16px;
+}
+
+.message-bubble.received {
+  background-color: #cce5ff;
+  color: #000;
+  align-self: flex-start;
+  text-align: left;
+  border-radius: 0 16px 16px 16px;
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* Wrap message to control alignment */
+.message-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message-wrapper.sender {
+  justify-content: flex-start; /* Left side */
+}
+
+.message-wrapper.receiver {
+  justify-content: flex-end; /* Right side */
+}
+
+/* Bubble styles */
+.message-bubble {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 16px;
+  word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sender-bubble {
+  background-color: #cce5ff; /* light blue */
+  color: #000;
+  border-radius: 0 16px 16px 16px;
+}
+
+.receiver-bubble {
+  background-color: #333; /* black/dark gray */
+  color: white;
+  border-radius: 16px 0 16px 16px;
+}
+
+/* Meta info */
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
