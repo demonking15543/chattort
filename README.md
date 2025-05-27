@@ -46,8 +46,11 @@ pip install -r requirements.txt
 # run the backend server
  daphne -p 8000 chatProject.asgi:application
 
-
+```
 # run the fronend server
+
+
+### 🔌 Frontend Setup (Django)
 
 ```bash cd frontend
 npm install
