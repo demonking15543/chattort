@@ -41,16 +41,13 @@ python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
-#v
-
-# run the backend server
  daphne -p 8000 chatProject.asgi:application
 
 ```
-# run the fronend server
 
 
 ### 🔌 Frontend Setup (Django)
+
 
 ```bash cd frontend
 npm install
