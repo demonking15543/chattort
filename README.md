@@ -49,7 +49,8 @@ pip install -r requirements.txt
 ### 🔌 Frontend Setup (Django)
 
 
-```bash cd frontend
+```bash 
+cd frontend
 npm install
 npm start
 ```
