@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```
 
 
-### 🔌 Frontend Setup (Django)
+### 🔌 Frontend Setup (React)
 
 
 ```bash 
